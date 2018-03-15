@@ -1,0 +1,9 @@
+.debhelper/
+autoreconf.after
+autoreconf.before
+files
+*.debhelper.log
+*.substvars
+libblitz0-dev/
+libblitz0/
+tmp/

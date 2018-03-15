@@ -1,0 +1,29 @@
+Source: blitz
+Section: devel
+Priority: optional
+Maintainer: KERN packaging <packaging@kernsuite.info>
+Build-Depends: debhelper (>=9), dh-autoreconf
+Standards-Version: 3.9.8
+Homepage: https://github.com/blitzpp/blitz/
+
+Package: libblitz0
+Architecture: any
+Section: libs
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: C++ template class library providing array objects
+ Blitz++ is a C++ template class library that provides array objects for
+ scientific computing. It is not a linear algebra or fft library.
+
+Package: libblitz0-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends},
+ 	${shlibs:Depends},
+	libblitz0 (= ${binary:Version})
+Conflicts: libblitz-dev,
+        blitz++
+Provides: libblitz-dev,
+        blitz++
+Description: C++ template class library providing array objects
+ Blitz++ is a C++ template class library that provides array objects for
+ scientific computing. It is not a linear algebra or fft library.
