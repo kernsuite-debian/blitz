@@ -113,9 +113,6 @@
 /* define if the compiler supports the mutable keyword */
 #undef HAVE_MUTABLE
 
-/* define if the compiler implements namespaces */
-#undef HAVE_NAMESPACES
-
 /* define if the compiler supports the Numerical C Extensions Group restrict
    keyword */
 #undef HAVE_NCEG_RESTRICT
@@ -215,8 +212,7 @@
 /* define if the compiler has isnan function in namespace std */
 #undef ISNAN_IN_NAMESPACE_STD
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #undef LT_OBJDIR
 
 /* define if the compiler has C math abs(integer types) in namespace std */
