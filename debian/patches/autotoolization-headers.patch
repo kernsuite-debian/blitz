@@ -1,0 +1,30 @@
+Author: KERN packaging <packaging@kernsuite.info>
+Date: 2020-05-08
+Subject: Attempt to complete to the list of headers to install.
+
+diff --git a/blitz/Makefile.am b/blitz/Makefile.am
+index 5dc8d52..25e3218 100644
+--- a/blitz/Makefile.am
++++ b/blitz/Makefile.am
+@@ -19,7 +19,7 @@ ops.h prettyprint.h promote.h range.h range.cc ranks.h reduce.h	      \
+ shapecheck.h simdtypes.h tau.h timer.h tinymat2.h tinymat2.cc	      \
+ tinymat2io.cc tinyvec2.cc tinyvec2.h tinyvec2io.cc tm2fastiter.h      \
+ tmevaluate.h tv2fastiter.h tvevaluate.h traversal.cc traversal.h      \
+-tuning.h tvcross.h tvecglobs.h update.h wrap-climits.h $(genheaders)
++tuning.h tvcross.h tvecglobs.h update.h vector2.h wrap-climits.h $(genheaders)
+ 
+ EXTRA_HEADERS = apple/bzconfig.h intel/bzconfig.h ibm/bzconfig.h \
+ compaq/bzconfig.h hp/bzconfig.h sgi/bzconfig.h gnu/bzconfig.h \
+diff --git a/blitz/Makefile.in b/blitz/Makefile.in
+index 4100179..a94f511 100644
+--- a/blitz/Makefile.in
++++ b/blitz/Makefile.in
+@@ -460,7 +460,7 @@ ops.h prettyprint.h promote.h range.h range.cc ranks.h reduce.h	      \
+ shapecheck.h simdtypes.h tau.h timer.h tinymat2.h tinymat2.cc	      \
+ tinymat2io.cc tinyvec2.cc tinyvec2.h tinyvec2io.cc tm2fastiter.h      \
+ tmevaluate.h tv2fastiter.h tvevaluate.h traversal.cc traversal.h      \
+-tuning.h tvcross.h tvecglobs.h update.h wrap-climits.h $(genheaders)
++tuning.h tvcross.h tvecglobs.h update.h vector2.h wrap-climits.h $(genheaders)
+ 
+ EXTRA_HEADERS = apple/bzconfig.h intel/bzconfig.h ibm/bzconfig.h \
+ compaq/bzconfig.h hp/bzconfig.h sgi/bzconfig.h gnu/bzconfig.h \
