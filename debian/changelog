@@ -1,3 +1,10 @@
+blitz (1.0.2-1kern1) bionic; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * New upstream release 1.0.2
+
+ -- KERN packaging <packaging@kernsuite.info>  Thu, 07 May 2020 12:18:19 +0200
+
 blitz (1.0.1-1kern2) bionic; urgency=medium
 
   * add missing python dependency
