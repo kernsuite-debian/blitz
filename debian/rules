@@ -1,7 +1,16 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with autoreconf 
+	dh $@ --with autoreconf --builddirectory=_build --no-parallel
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-shared
+	dh_auto_configure -- \
+        --enable-static \
+        --enable-shared
+
+override_dh_auto_build-arch:
+	$(MAKE) -C _build lib
+
+override_dh_auto_test-arch:
+	$(MAKE) -C _build/examples check
+	$(MAKE) -C _build/testsuite check
