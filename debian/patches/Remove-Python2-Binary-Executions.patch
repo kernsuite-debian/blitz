@@ -1,0 +1,61 @@
+Author: KERN packaging <packaging@kernsuite.info>
+Date: 2021-25-02
+Subject: Replace all python2 instances with python3.
+
+
+diff --git a/blitz/generate/Makefile.am b/blitz/generate/Makefile.am
+index 38e2e34..52c1fba 100644
+--- a/blitz/generate/Makefile.am
++++ b/blitz/generate/Makefile.am
+@@ -9,7 +9,7 @@ EXTRA_DIST = genstencils.py
+ EXTRA_PROGRAMS = 
+ 
+ $(top_srcdir)/blitz/array/stencil-classes.cc: genstencils.py
+-	python $< $@
++	python3 $< $@
+ 
+ generate-headers: $(top_srcdir)/blitz/array/stencil-classes.cc
+ 
+diff --git a/blitz/generate/Makefile.in b/blitz/generate/Makefile.in
+index 1db88f4..941b7d9 100644
+--- a/blitz/generate/Makefile.in
++++ b/blitz/generate/Makefile.in
+@@ -621,7 +621,7 @@ uninstall-am:
+ 
+ 
+ $(top_srcdir)/blitz/array/stencil-classes.cc: genstencils.py
+-	python $< $@
++	python3 $< $@
+ 
+ generate-headers: $(top_srcdir)/blitz/array/stencil-classes.cc
+ 
+diff --git a/blitz/generate/genstencils.py b/blitz/generate/genstencils.py
+index f2eba28..90bba75 100644
+--- a/blitz/generate/genstencils.py
++++ b/blitz/generate/genstencils.py
+@@ -1,4 +1,4 @@
+-#!/bin/env python
++#!/bin/env python3
+ 
+ # Generates stencil code. This replaces the macros in stencil-et.h,
+ # which make it impossible to debug the generated code.
+diff --git a/blitz/generate/makeloops.py b/blitz/generate/makeloops.py
+index aba3ac3..4f3be42 100755
+--- a/blitz/generate/makeloops.py
++++ b/blitz/generate/makeloops.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ # python version of the makeloops.cpp that generates the benchmark
+ # loops.
+diff --git a/travis-ci/check-wiki-examples.py b/travis-ci/check-wiki-examples.py
+index 5138aae..e774a3e 100755
+--- a/travis-ci/check-wiki-examples.py
++++ b/travis-ci/check-wiki-examples.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ 
+ def retrieve_from_wiki():
+   import git, tempfile, shutil, os
