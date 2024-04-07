@@ -1,3 +1,10 @@
+blitz (1.0.2-1kern4) jammy; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * Build for jammy
+
+ -- KERN packaging <packaging@kernsuite.info>  Sun, 07 Apr 2024 19:17:45 +0000
+
 blitz (1.0.2-1kern3) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]
