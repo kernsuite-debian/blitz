@@ -1,5 +1,6 @@
 usr/lib/*/libblitz.so
 usr/lib/*/libblitz.a
+usr/lib/*/libblitz.la
 usr/lib/*/pkgconfig/*
 usr/include/blitz/*
 usr/include/random/*
